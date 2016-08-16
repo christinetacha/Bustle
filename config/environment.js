@@ -2,7 +2,7 @@
 
 module.exports = function(environment) {
   var ENV = {
-    modulePrefix: 'super-rentals',  # This will differ depending on what you named YOUR app.
+    modulePrefix: 'bustle', 
     environment: environment,
     baseURL: '/',
     locationType: 'auto',
@@ -17,7 +17,7 @@ module.exports = function(environment) {
            apiKey: 'AIzaSyAA3rVUoMGVQAoN2fW2xFfFv-X5Gu05dK8',
       authDomain: 'bustle-661c6.firebaseapp.com',
       databaseURL: 'https://bustle-661c6.firebaseio.com',
-      storageBucket: 'bustle-661c6.appspot.com', 
+      storageBucket: 'bustle-661c6.appspot.com',
     },
 
     APP: {
