@@ -2,8 +2,10 @@
 
 <ul>
   {{#each model as |stories|}}
-    <li>{{stories.headline}} by: {{stories.author}} in {{stories.category}}</li>
+    {{stories-tile stories=stories}}
   {{/each}}
 </ul>
+
+<!-- Here ^ we are looping through each story in the model. But instead of displaying the story details directly on the index template, we're rendering our new component by calling it. -->
 
 {{#link-to 'admin'}}Click here to add or edit stories.{{/link-to}}
