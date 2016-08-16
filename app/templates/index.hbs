@@ -1,13 +1,9 @@
 <h1>Bustle</h1>
 
 <ul>
-  <li>News</li>
-  <li>Entertainment</li>
-  <li>Fashion &amp; Beauty</li>
-  <li>Lifestyle</li>
-  <li>Books</li>
-  <li>Explore</li>
-  <li>About</li>
+  {{#each model as |stories|}}
+    <li>{{stories.headline}} by: {{stories.author}} in {{stories.category}}</li>
+  {{/each}}
 </ul>
 
 {{#link-to 'admin'}}Click here to add or edit stories.{{/link-to}}
