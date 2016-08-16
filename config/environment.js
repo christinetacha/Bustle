@@ -2,15 +2,22 @@
 
 module.exports = function(environment) {
   var ENV = {
-    modulePrefix: 'bustle',
+    modulePrefix: 'super-rentals',  # This will differ depending on what you named YOUR app.
     environment: environment,
-    rootURL: '/',
+    baseURL: '/',
     locationType: 'auto',
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
         // e.g. 'with-controller': true
       }
+    },
+
+    firebase: {
+           apiKey: 'AIzaSyAA3rVUoMGVQAoN2fW2xFfFv-X5Gu05dK8',
+      authDomain: 'bustle-661c6.firebaseapp.com',
+      databaseURL: 'https://bustle-661c6.firebaseio.com',
+      storageBucket: 'bustle-661c6.appspot.com', 
     },
 
     APP: {
